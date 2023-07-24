@@ -6,7 +6,7 @@ body {
   justify-content: center;
   padding: 186px 0;
 }
-.card {
+.product-card {
   width: 485px;
   background-color: #fff;
   box-shadow: 0px 4px 65px 0px rgba(84, 96, 200, 0.17);
@@ -14,7 +14,7 @@ body {
   border-radius: 24px;
   position: relative;
 }
-.card::after {
+.product-card::after {
   content: '';
   position: absolute;
   width: 470px;
@@ -25,7 +25,7 @@ body {
   bottom: 42px;
   border-radius: 24px;
 }
-.cart-title {
+.product-rating {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 16px;
@@ -38,7 +38,7 @@ body {
 .cart-review strong {
   font-weight: 700;
 }
-.text {
+.productPrice {
   padding-top: 24px;
   color: #172039;
   font-family: Mulish;
@@ -47,7 +47,7 @@ body {
   font-weight: 900;
   line-height: normal;
 }
-.text1 {
+.button-container {
   display: flex;
   width: 371px;
   height: 56px;
@@ -60,8 +60,8 @@ body {
   border-radius: 13px;
   margin-top: 15px;
 }
-.text1 .Deliver,
-.text1 .Pick {
+.button-container .deliveryOptions,
+.button-container .pickOption {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ body {
   font-weight: 600;
   line-height: normal;
 }
-.Deliver:hover {
+.deliveryOptions:hover {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +82,7 @@ body {
   background: #FFF;
   box-shadow: 0px 5px 5px 0px rgba(0, 44, 168, 0.06);
 }
-.Pick:hover{
+.pickOption:hover{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,16 +90,17 @@ body {
   background: #FFF;
   box-shadow: 0px 5px 5px 0px rgba(0, 44, 168, 0.06);
 }
-.Deliver,
-.Pick {
+.deliveryOptions,
+.pickOption {
   margin-top: 5px;
 }
-.text1 .Deliver a,
-.text1 .Pick a {
+.button-container .deliveryOptions a,
+.button-container .pickOption a {
   color: #000000;
   margin-top: 8px;
 }
-.text2 {
+
+.search-container {
   display: flex;
   align-items: center;
   width: 371px;
@@ -111,10 +112,10 @@ body {
   border: 1px solid #a3a4ab;
   gap: 10px;
 }
-.text2 .icon {
+.search-container .icon {
   margin-left: 10px;
 }
-.text2 input {
+.search-container input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -123,7 +124,7 @@ body {
   border: none;
   font-size: 20px;
 }
-.text3 {
+.store-info{
   width: 369px;
   padding: 0px 16px 16px 0px;
   flex-direction: column;
@@ -133,29 +134,29 @@ body {
   border: 1px solid #d7d9e8;
   margin-bottom: 16px;
 }
-.text3 b,
-.text3 p,
-.text3 strong,
-.text3 small {
+.store-info b,
+.store-info p,
+.store-info strong,
+.store-info small {
   margin-left: 16px;
   margin-bottom: 8px;
 }
-.text3 p,
-.text3 strong {
+.store-info p,
+.store-info strong {
   color: #172039;
   font-family: Mulish;
 }
-.text3 p {
+.store-info p {
   margin: 8px 0 8px 16px;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
 }
-.text3 strong {
+.store-info strong {
   font-size: 18px;
   font-weight: 700;
 }
-.text3 small {
+.store-info small {
   margin-bottom: 8px;
   color: #747988;
   font-family: Mulish;
@@ -163,7 +164,7 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.text3 b{
+.store-infob{
   color:#172039;
 font-family: Mulish;
 font-size: 18px;
@@ -171,7 +172,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-.add {
+.addToCart {
   margin-top: 16px;
   display: flex;
   padding: 0px 16px 16px 0px;
@@ -183,11 +184,11 @@ line-height: normal;
   background: #4571f5;
   margin-left: 20px;
 }
-.add a {
+.addToCart a {
   margin-top: 10px;
   color: aliceblue;
 }
-.get {
+.getItemsFaster {
   color: #747988;
   font-family: Mulish;
   font-size: 14px;
